@@ -1,0 +1,7 @@
+
+fastapi==0.78.0 
+uvicorn==0.17.6
+python-dotenv 
+xformers 
+boto3 
+streamlit # probably no longer required as fronted is separated now

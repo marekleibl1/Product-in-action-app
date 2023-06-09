@@ -1,0 +1,4 @@
+# put your keys here and rename to '.env' 
+AWS_ACCESS_KEY=
+AWS_SECRET_KEY=
+REGION_NAME='ap-southeast-1'
