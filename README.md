@@ -91,8 +91,6 @@ To get better price and faster prediction without cold boots, this could also ru
 
 # Setup 
 
-Instructions how to setup the project and code will be added soon. 
-
 1) Create a docker image
 ```
 docker build -t vast-image .
@@ -102,12 +100,11 @@ docker push marekleibl/vast-repo:latest
 ```
 Replace 'marekleibl' and 'vast-image' with your name and the image name. 
 
-2) Create a vast instance
+2) Create a Vast instance
 - Go to https://cloud.vast.ai/
-- Create a new account
-- Edit image & config
-- Add your docker
-- Launch a new instance with at least 12GB GPU RAM
+- Create account
+- Edit image & config > Add your docker
+- Launch a new instance (with at least 12GB GPU RAM)
 
 3) Run server
 - Connect to the instance via terminal
@@ -115,11 +112,10 @@ Replace 'marekleibl' and 'vast-image' with your name and the image name.
 ```
 python /workspace/app/backend/main.py
 ```
-4) Run client
- - option 1: Run on Vast
+4) Run client - Option 1: Run on Vast
 ```
 app/frontend/
 streamlit run streamlit_app.py
 ```
- - option 2: Host on Streamlit
+4) Run client - Option 2: Host on Streamlit
    - Create new app on https://streamlit.io/ 
