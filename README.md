@@ -121,4 +121,4 @@ streamlit run streamlit_app.py
    - Create new app on https://streamlit.io/ 
 
 
-![alt text](how_it_works.mp4)
+![alt text](how_it_works.gif)
