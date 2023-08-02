@@ -1,5 +1,4 @@
 
-
 # Product in Action - Running Finetuned Stable Diffusion on VAST
 
 This is my simple web for generating images of real products using finetuned stable diffusion.  
@@ -93,3 +92,34 @@ To get better price and faster prediction without cold boots, this could also ru
 # Setup 
 
 Instructions how to setup the project and code will be added soon. 
+
+1) Create a docker image
+```
+docker build -t vast-image .
+docker login -u marekleibl
+docker tag vast-image:latest marekleibl/vast-repo:latest
+docker push marekleibl/vast-repo:latest
+```
+Replace 'marekleibl' and 'vast-image' with your name and the image name. 
+
+2) Create a vast instance
+- Go to https://cloud.vast.ai/
+- Create a new account
+- Edit image & config
+- Add your docker
+- Launch a new instance with at least 12GB GPU RAM
+
+3) Run server
+- Connect to the instance via terminal
+- Run server
+```
+python /workspace/app/backend/main.py
+```
+4) Run client
+ - option 1: Run on Vast
+```
+app/frontend/
+streamlit run streamlit_app.py
+```
+ - option 2: Host on Streamlit
+   - Create new app on https://streamlit.io/ 
