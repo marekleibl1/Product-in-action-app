@@ -120,5 +120,6 @@ streamlit run streamlit_app.py
 4) Run client - Option 2: Host on Streamlit
    - Create new app on https://streamlit.io/ 
 
+## Final App
 
 ![alt text](how_it_works.gif)
